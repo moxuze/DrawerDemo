@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/textFragment">
+
+    <fragment
+        android:id="@+id/textFragment"
+        android:name="com.moxtar_1s.android.demo.drawer.TextFragment"
+        android:label="@string/text_fragment_title"
+        tools:layout="@layout/fragment_text" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.moxtar_1s.android.demo.drawer.ListFragment"
+        android:label="@string/list_fragment_title"
+        tools:layout="@layout/fragment_list" />
+    <fragment
+        android:id="@+id/pagerFragment"
+        android:name="com.moxtar_1s.android.demo.drawer.PagerFragment"
+        android:label="@string/pager_fragment_title"
+        tools:layout="@layout/fragment_pager" />
+</navigation>
